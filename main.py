@@ -75,6 +75,7 @@ def kali():
     os.system("pkg install git -y")
     os.system("git clone https://github.com/Hax4us/Nethunter-In-Termux")
     os.system("cd Nethunter-In-Termux")
+    os.system("chmod 777 kalinethunter")
     os.system("./kalinethunter")
     kali="For Kali linux Using\n$startkali -r"
     for ka in kali:
