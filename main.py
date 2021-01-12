@@ -85,7 +85,7 @@ def kali():
     time.sleep(4)
     os.system("clear")
     menu()
-def  ubuntu():
+def ubuntu():
     os.system("apt-get install wget -y")
     os.system("apt-get install proot -y")
     os.system("apt-get install git -y"
