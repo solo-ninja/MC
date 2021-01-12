@@ -88,11 +88,10 @@ def kali():
 def  ubuntu():
     os.system("apt-get install wget -y")
     os.system("apt-get install proot -y")
-    os.system("apt-get install git -y")
-    os.system("cd ~")
+    os.system("apt-get install git -y"
     os.system("git clone https://github.com/MFDGaming/ubuntu-in-termux.git")
     os.system("cd ubuntu-in-termux")
-    os.system("chmod +x ubuntu.sh")
+    os.system("chmod 777 ubuntu.sh")
     os.system("bash ubuntu.sh -y")
     ub="For Ubuntu Using/n $./startubuntu.sh "
     for u in ub:
