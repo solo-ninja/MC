@@ -65,10 +65,12 @@ def menu():
         elif a==6: exit()
         else:
             print("This Number  No exit.")
+            time.sleep(5)
             os.system("clear")
             menu()
        except ValueError:
            print("Enter Only Number")
+           time.sleep(5)
            os.system("clear")
            menu()
 def kali():
@@ -77,12 +79,12 @@ def kali():
     os.system("cd Nethunter-In-Termux")
     os.system("chmod 777 kalinethunter")
     os.system("./kalinethunter")
-    kali="For Kali linux Using\n$startkali -r"
+    kali="\n\nFor Kali linux Using\n\n$startkali -r"
     for ka in kali:
         sleep(0.1)
         sys.stdout.write(ka)
         sys.stdout.flush()
-    time.sleep(4)
+    time.sleep(10)
     os.system("clear")
     menu()
 def ubuntu():
@@ -93,12 +95,12 @@ def ubuntu():
     os.system("cd ubuntu-in-termux")
     os.system("chmod 777 ubuntu.sh")
     os.system("bash ubuntu.sh -y")
-    ub="For Ubuntu Using/n $./startubuntu.sh "
+    ub="\n\nFor Ubuntu Using\n\n $./startubuntu.sh "
     for u in ub:
         sleep(0.2)
         sys.stdout.write(u)
         sys.stdout.flush()
-    time.sleep(4)
+    time.sleep(10)
     os.system("clear")
     menu()
 def centos():
@@ -114,7 +116,7 @@ def centos():
         sleep(0.1)
         sys.stdout.write(ct)
         sys.stdout.flush()
-    time.sleep(4)
+    time.sleep(10)
     os.system("clear")
     menu()
 def arch():
@@ -124,23 +126,23 @@ def arch():
     os.system("wget https://raw.githubusercontent.com/sdrausty/TermuxArch/master/setupTermuxArch.sh")
     os.system("chmod +x setupTermuxArch.sh")
     os.system("bash setupTermuxArch.sh")
-    arch="For Arch linux Using\n$startarch"
+    arch="\n\nFor Arch linux Using\n\n$startarch"
     for arc in arch:
         sleep(0.2)
         sys.stdout.write(arch)
         sys.stdout.flush()
-    time.sleep(4)
+    time.sleep(10)
     os.system("clear")
     menu()
 def fedo():
     os.system("apt install proot -y")
     os.system("apt update && apt install wget -y && /data/data/com.termux/files/usr/bin/wget https://raw.githubusercontent.com/nmilosev/termux-fedora/master/termux-fedora.sh && sh termux-fedora.sh")
-    fed="For Fedora linux\n$fedora"
+    fed="\n\nFor Fedora linux\n\n$fedora"
     for fe in fed:
         sleep(0.2)
         sys.stdout.write(fe)
         sys.stdout.flush()
-    time.sleep(4)
+    time.sleep(10)
     os.system("clear")
     menu()
 menu()
